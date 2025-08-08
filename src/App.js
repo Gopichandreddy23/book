@@ -21,6 +21,23 @@ import InterviewFrontend from './component/Interview/InterviewFrontend';
 import InterviewDatabase from './component/Interview/InterviewDatabase';
 import PracticeJava from './component/Pratice/PracticeJava';
 import PracticeCore from './component/Pratice/PracticeCoreJava';
+import AdvancedJavaPracticeApp from './component/Pratice/PracticeAdvance';
+import PracticeSpring from './component/Pratice/PracticeSpring';
+import PNode from './component/Pratice/Pnode';
+import PracticeNode from './component/Pratice/PracticeNode';
+import PracticeExpress from './component/Pratice/PracticeExpress';
+import PracticePython from './component/Pratice/PracticePython';
+import PraPython from './component/Pratice/PracticePythons';
+import PracticeAdvancedPython from './component/Pratice/PracticeAdvancePython';
+import DjangoPractice from './component/Pratice/PracticeDjango';
+import MySQLPractice from './component/Pratice/MySqlPractice';
+import OraclePractice from './component/Pratice/PracticeOracle';
+import PracticeMango from './component/Pratice/MangoPractice';
+import HtmlPracticeApp from './component/Pratice/HtmlPractice';
+import CssPracticeApp from './component/Pratice/PracticeCss';
+import JsPracticeApp from './component/Pratice/JsPractice';
+import BootstrapPracticeApp from './component/Pratice/BootstrapPractice';
+import TsPracticeApp from './component/Pratice/TypescriptPractice';
 
 export const App = () => {
   return (
@@ -45,6 +62,23 @@ export const App = () => {
           <Route path="/practicedatabase" element={<PracticeDatabase/>} />
           <Route path="/practicejava" element={<PracticeJava/>} />
           <Route path="/practicecorejava" element={<PracticeCore/>} />
+           <Route path="/practicenode" element={<PNode/>} />
+            <Route path="/practicenodejs" element={<PracticeNode/>} />
+             <Route path="/practiceexpress" element={<PracticeExpress/>} />
+              <Route path="/practicepythons" element={<PraPython/>} />
+              <Route path="/practicepython" element={<PracticePython/>} />
+               <Route path="/practicedjango" element={<DjangoPractice/>} />
+                <Route path="/practicemysql" element={<MySQLPractice/>} />
+                 <Route path="/practiceoracle" element={<OraclePractice/>} />
+                 <Route path="/practicemangodb" element={<PracticeMango/>} />
+                  <Route path="/practice/html" element={<HtmlPracticeApp/>} />
+                  <Route path="/practice/css" element={<CssPracticeApp/>} />
+                  <Route path="/practice/js" element={<JsPracticeApp/>} />
+                  <Route path="/practice/typescript" element={<TsPracticeApp/>} />
+                   <Route path="/practice/bootstrap" element={<BootstrapPracticeApp/>} />
+                      <Route path="/practiceadvancepython" element={<PracticeAdvancedPython/>} />
+           <Route path="/practiceadvance" element={<AdvancedJavaPracticeApp/>} />
+            <Route path="/practicespring" element={<PracticeSpring/>} />
                   <Route path="/interview" element={<InterviewBook />} />
          <Route path="/interviewbackend" element={<InterviewBackendModule/>} />
          <Route path="/interviewfrontend" element={<InterviewFrontend/>} />

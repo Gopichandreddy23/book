@@ -21,7 +21,7 @@ Multimedia (Audio/Video)
 
 Meta Tags & SEO Basics`,
       image: '/html.jpg',
-      link: 'https://www.oracle.com/java/technologies/javase-overview.html'
+      link: '/practice/html'
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ Transitions & Animations
 
 Media Queries & Responsive Design`,
       image: '/css.jpg',
-      link: 'https://www.geeksforgeeks.org/advanced-java/'
+      link: '/practice/css'
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ Fetch API / AJAX
 
 Error Handling`,
       image: '/js.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: '/practice/js'
     }
     ,
     {
@@ -92,7 +92,7 @@ Responsive Utilities
 
 Bootstrap Icons`,
       image: '/bootstrap.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: '/practice/bootstrap'
     },
     {
       id: 4,
@@ -114,7 +114,7 @@ Modules & Namespaces
 
 TypeScript with React / Node.js`,
       image: '/typescript.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: '/practice/typescript'
     },
     {
       id: 5,
@@ -144,7 +144,7 @@ Redux (State Management)
 
 React with TypeScript (Optional Advanced)`,
       image: '/react.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: '/practice/react'
     }
   ];
 

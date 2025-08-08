@@ -1,34 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const PracticeBackendModule = () => {
+const PNode = () => {
   const cards = [
     {
       id: 1,
-      title: 'Java',
-      description: 'Server-side development with Java, Spring Boot, etc.',
-      image: '/java.jpg',
-      link: '/practicejava'
+      title: 'Node Js',
+      description:
+        'Node.js is a runtime environment that allows you to run JavaScript on the server side, enabling fast and scalable network applications.',
+      image: '/nodejs.jpg',
+      link: '/practicenodejs'
     },
     {
       id: 2,
-      title: 'Python',
-      description: 'Backend development with Python, Django, Flask',
-      image: '/python.jpg',
-      link: '/practicepythons'
-    },
-    {
-      id: 3,
-      title: 'Node Js',
-      description: 'JavaScript runtime for server-side development',
-      image: '/node.jpg',
-      link: '/practicenode'
+      title: 'Express Js',
+      description:
+        'Express.js is a minimal and flexible Node.js web application framework that simplifies building web APIs and servers.',
+      image: '/express.jpg',
+      link: '/practiceexpress'
     }
   ];
 
   const handleCardClick = (link) => {
-    // This will navigate within the same tab
-    window.location.href = link;
+    window.location.href = link; // Changed from window.open to navigate in same tab
   };
 
   const cardVariants = {
@@ -58,7 +52,7 @@ const PracticeBackendModule = () => {
         transition={{ duration: 0.5 }}
         style={styles.title}
       >
-        Backend Technology
+        Node Js Technology
       </motion.h1>
 
       <div style={styles.cardContainer}>
@@ -166,4 +160,4 @@ const styles = {
   }
 };
 
-export default PracticeBackendModule;
+export default PNode;

@@ -17,7 +17,7 @@ const PracticeJava = () => {
       description:
         'Focuses on web and enterprise application development using Servlets, JSP, and JDBC.Helps build dynamic, data-driven websites and APIs.',
       image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      link: 'https://www.geeksforgeeks.org/advanced-java/'
+      link: '/practiceadvance'
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const PracticeJava = () => {
       description:
         'Spring and Spring Boot simplify backend development by enabling RESTful APIs, dependency injection, and seamless integration with SQL and NoSQL databases.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      link: '/spring'
+      link: '/practicespring'
     }
   ];
 

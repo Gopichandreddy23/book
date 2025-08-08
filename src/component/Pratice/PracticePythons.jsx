@@ -1,34 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const PracticeBackendModule = () => {
+const PraPython = () => {
   const cards = [
     {
       id: 1,
-      title: 'Java',
-      description: 'Server-side development with Java, Spring Boot, etc.',
-      image: '/java.jpg',
-      link: '/practicejava'
+      title: 'Core Python',
+      description:
+        'Basic Python programming concepts like data types, loops, functions, and OOP used for writing simple scripts and applications.',
+      image: '/corepython.jpg',
+      link: '/practicepython'
     },
     {
       id: 2,
-      title: 'Python',
-      description: 'Backend development with Python, Django, Flask',
-      image: '/python.jpg',
-      link: '/practicepythons'
+      title: 'Advance Python',
+      description:
+        'Covers complex features like decorators, generators, multithreading, and APIs for building efficient and scalable Python programs.',
+      image: '/advancepython.jpg',
+      link: '/practiceadvancepython'
     },
     {
       id: 3,
-      title: 'Node Js',
-      description: 'JavaScript runtime for server-side development',
-      image: '/node.jpg',
-      link: '/practicenode'
+      title: 'Django',
+      description:
+        'A high-level Python web framework used to build secure, fast, and scalable web applications with built-in admin and ORM support.',
+      image: '/django.jpg',
+      link: '/practicedjango'
     }
   ];
 
   const handleCardClick = (link) => {
-    // This will navigate within the same tab
-    window.location.href = link;
+    window.location.href = link; // Changed from window.open to navigate in same tab
   };
 
   const cardVariants = {
@@ -58,7 +60,7 @@ const PracticeBackendModule = () => {
         transition={{ duration: 0.5 }}
         style={styles.title}
       >
-        Backend Technology
+        Python Technology
       </motion.h1>
 
       <div style={styles.cardContainer}>
@@ -166,4 +168,4 @@ const styles = {
   }
 };
 
-export default PracticeBackendModule;
+export default PraPython;

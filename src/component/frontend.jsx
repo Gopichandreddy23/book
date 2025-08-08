@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import './Frontend.css';
 
 const Frontend = () => {
   const cards = [
@@ -70,8 +71,7 @@ Fetch API / AJAX
 Error Handling`,
       image: '/js.jpg',
       link: 'https://spring.io/projects/spring-boot'
-    }
-    ,
+    },
     {
       id: 4,
       title: 'BootStrap',
@@ -149,7 +149,7 @@ React with TypeScript (Optional Advanced)`,
   ];
 
   const handleCardClick = (link) => {
-    window.location.href = link; // Changed from window.open to navigate in same tab
+    window.location.href = link;
   };
 
   const cardVariants = {
@@ -172,17 +172,17 @@ React with TypeScript (Optional Advanced)`,
   };
 
   return (
-    <div style={styles.app}>
+    <div className="app">
       <motion.h1 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        style={styles.title}
+        className="title"
       >
         Frontend Technology
       </motion.h1>
 
-      <div style={styles.cardContainer}>
+      <div className="cardContainer">
         {cards.map((card, index) => (
           <motion.div
             key={card.id}
@@ -192,22 +192,22 @@ React with TypeScript (Optional Advanced)`,
             whileHover="hover"
             whileTap="tap"
             variants={cardVariants}
-            style={styles.card}
+            className="card"
             onClick={() => handleCardClick(card.link)}
           >
-            <div style={styles.cardImage}>
+            <div className="cardImage">
               <motion.img 
                 src={card.image} 
                 alt={card.title}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
-                style={styles.image}
+                className="image"
               />
             </div>
-            <div style={styles.cardContent}>
-              <h3 style={styles.cardTitle}>{card.title}</h3>
-              <p style={styles.cardDesc}>{card.description}</p>
-              <div style={styles.linkBadge}>
+            <div className="cardContent">
+              <h3 className="cardTitle">{card.title}</h3>
+              <p className="cardDesc">{card.description}</p>
+              <div className="linkBadge">
                 Learn More
               </div>
             </div>
@@ -216,75 +216,6 @@ React with TypeScript (Optional Advanced)`,
       </div>
     </div>
   );
-};
-
-const styles = {
-  app: {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '20px',
-    fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#f9f9f9',
-    minHeight: '100vh'
-  },
-  title: {
-    textAlign: 'center',
-    color: '#333',
-    marginBottom: '40px',
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    textShadow: '1px 1px 2px rgba(0,0,0,0.1)'
-  },
-  cardContainer: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    flexWrap: 'wrap',
-    gap: '30px',
-    marginBottom: '40px'
-  },
-  card: {
-    width: '320px',
-    borderRadius: '12px',
-    overflow: 'hidden',
-    backgroundColor: 'white',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    cursor: 'pointer'
-  },
-  cardImage: {
-    height: '200px',
-    overflow: 'hidden'
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    transition: 'transform 0.3s ease'
-  },
-  cardContent: {
-    padding: '20px',
-    position: 'relative'
-  },
-  cardTitle: {
-    marginTop: '0',
-    color: '#333',
-    fontSize: '1.5rem',
-    marginBottom: '10px'
-  },
-  cardDesc: {
-    color: '#666',
-    marginBottom: '15px',
-    fontSize: '1rem',
-    lineHeight: '1.5'
-  },
-  linkBadge: {
-    display: 'inline-block',
-    padding: '8px 16px',
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    borderRadius: '20px',
-    fontSize: '0.9rem',
-    fontWeight: 'bold'
-  }
 };
 
 export default Frontend;
