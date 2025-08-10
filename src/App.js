@@ -38,12 +38,15 @@ import CssPracticeApp from './component/Pratice/PracticeCss';
 import JsPracticeApp from './component/Pratice/JsPractice';
 import BootstrapPracticeApp from './component/Pratice/BootstrapPractice';
 import TsPracticeApp from './component/Pratice/TypescriptPractice';
+import Footer from './component/Footer';
+import ReactPracticeApp from './component/Pratice/ReactPractice';
 
 export const App = () => {
   return (
     <BrowserRouter>
       {/* Header appears on all pages */}
       <Header />
+     
       
       <Routes>
         {/* Home route - shows HeroSection and About */}
@@ -74,6 +77,7 @@ export const App = () => {
                   <Route path="/practice/html" element={<HtmlPracticeApp/>} />
                   <Route path="/practice/css" element={<CssPracticeApp/>} />
                   <Route path="/practice/js" element={<JsPracticeApp/>} />
+                  <Route path="/practice/react" element={<ReactPracticeApp/>} />
                   <Route path="/practice/typescript" element={<TsPracticeApp/>} />
                    <Route path="/practice/bootstrap" element={<BootstrapPracticeApp/>} />
                       <Route path="/practiceadvancepython" element={<PracticeAdvancedPython/>} />
@@ -91,6 +95,7 @@ export const App = () => {
         <Route path="/node" element={<Node />} />
         <Route path="/spring" element={<SpringPDFViewer />} />
       </Routes>
+       <Footer/>
     </BrowserRouter>
   );
 };

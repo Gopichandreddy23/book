@@ -1,3 +1,4 @@
+/* Header.css */
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,84 @@
   right: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.header.festival-mode {
+  background-color: #fff9e6;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.header.festival-mode .logo-container {
+  animation: pulse 1s infinite alternate;
+}
+
+.header.festival-mode .nav-link {
+  color: #ff6b6b;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.header.festival-mode .login-button {
+  background-color: #ff6b6b;
+  animation: shake 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Festival wave animation */
+.festival-wave-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.festival-wave {
+  position: absolute;
+  left: -100px;
+  width: 200px;
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(10px);
+  animation: waveMove 4s linear infinite;
+  transform: rotate(45deg);
+}
+
+@keyframes waveMove {
+  0% {
+    left: -200px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
 }
 
 .logo-container {
@@ -17,17 +96,20 @@
   align-items: center;
   gap: 1rem;
   z-index: 1001;
+  transition: all 0.3s ease;
 }
 
 .logo-image {
   height: 50px;
   width: auto;
+  transition: all 0.3s ease;
 }
 
 .company-name {
   font-weight: bold;
   font-size: 1.2rem;
   color: #333333;
+  transition: all 0.3s ease;
 }
 
 .navbar {
@@ -154,6 +236,34 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Festival mode specific styles */
+.header.festival-mode .nav-item {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.header.festival-mode .login-dropdown {
+  background-color: #fff9e6;
+  border: 1px solid #ffcc00;
+}
+
+.header.festival-mode .login-option {
+  color: #d35400;
+}
+
+.header.festival-mode .login-option:hover {
+  background-color: #ffeaa7;
+  color: #e17055;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .navbar {
@@ -223,5 +333,14 @@
   
   .hamburger {
     display: block;
+  }
+
+  .header.festival-mode .nav-item {
+    animation: none;
+  }
+
+  .festival-wave {
+    width: 100px;
+    height: 80px !important;
   }
 }
