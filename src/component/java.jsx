@@ -10,7 +10,7 @@ const Java = () => {
       description:
         'Provides the basic building blocks of Java like OOP, multithreading, and exception handling. Ideal for developing standalone and backend applications.',
       image: '/corejava.jpg',
-      link: 'https://www.oracle.com/java/technologies/javase-overview.html'
+      link: '/java/pdf'
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Java = () => {
       description:
         'Focuses on web and enterprise application development using Servlets, JSP, and JDBC. Helps build dynamic, data-driven websites and APIs.',
       image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      link: 'https://www.geeksforgeeks.org/advanced-java/'
+      link: '/advancejava/pdf'
     },
     {
       id: 3,

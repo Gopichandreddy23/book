@@ -114,7 +114,7 @@ Modules & Namespaces
 
 TypeScript with React / Node.js`,
       image: '/typescript.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: '/reactpdf'
     },
     {
       id: 5,
@@ -144,7 +144,7 @@ Redux (State Management)
 
 React with TypeScript (Optional Advanced)`,
       image: '/react.jpg',
-      link: 'https://spring.io/projects/spring-boot'
+      link: 'reactpdf'
     }
   ];
 

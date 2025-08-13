@@ -20,8 +20,8 @@
 // export default SpringPDFViewer;
 import React from 'react';
 
-const SpringPDFViewer = () => {
-  const driveLink = "https://drive.google.com/file/d/1-paDHN1MyaCrO7dmJSuwx1Z3M3S0EnTx/view?usp=sharing";
+const ReactPDFViewer = () => {
+  const driveLink = "https://drive.google.com/file/d/15KGSMV0YmXV3h0BSPrszDrUkK5QNPK9s/view?usp=drivesdk";
   const pdfUrl = driveLink.replace('/view', '/preview');
 
   // Example Google image URL (replace with your own)
@@ -37,7 +37,7 @@ const SpringPDFViewer = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '20px',
+      padding: '10px',
       boxSizing: 'border-box'
     }}>
       <style>
@@ -53,21 +53,21 @@ const SpringPDFViewer = () => {
             }
           }
 
-          .animated-border {
-            border: 5px solid transparent;
-            border-radius: 10px;
-            background-image: linear-gradient(white, white),
-              linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-            background-origin: border-box;
-            background-clip: content-box, border-box;
-            animation: borderMove 3s linear infinite;
-          }
+        //   .animated-border {
+        //     border: 5px solid transparent;
+        //     border-radius: 10px;
+        //     background-image: linear-gradient(white, white),
+        //       linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        //     background-origin: border-box;
+        //     background-clip: content-box, border-box;
+        //     animation: borderMove 3s linear infinite;
+        //   }
         `}
       </style>
 
       <iframe
         src={pdfUrl}
-        width="40%"
+        width="45%"
         height="100%"
         className="animated-border"
         title="PDF Viewer"
@@ -76,4 +76,4 @@ const SpringPDFViewer = () => {
   );
 };
 
-export default SpringPDFViewer;
+export default ReactPDFViewer;

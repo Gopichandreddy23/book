@@ -40,6 +40,9 @@ import BootstrapPracticeApp from './component/Pratice/BootstrapPractice';
 import TsPracticeApp from './component/Pratice/TypescriptPractice';
 import Footer from './component/Footer';
 import ReactPracticeApp from './component/Pratice/ReactPractice';
+import CoreJavaPDFViewer from './component/corejava';
+import AdvanceJavaPDFViewer from './component/advance';
+import ReactPDFViewer from './component/Reactjs';
 
 export const App = () => {
   return (
@@ -94,6 +97,9 @@ export const App = () => {
         <Route path="/python" element={<Python />} />
         <Route path="/node" element={<Node />} />
         <Route path="/spring" element={<SpringPDFViewer />} />
+        <Route path="/java/pdf" element={<CoreJavaPDFViewer />} />
+        <Route path="/advancejava/pdf" element={<AdvanceJavaPDFViewer />} />
+         <Route path="/reactpdf" element={<ReactPDFViewer />} />
       </Routes>
        <Footer/>
     </BrowserRouter>
