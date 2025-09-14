@@ -9,21 +9,21 @@ const Database = () => {
       title: 'MySql',
       description: 'MySQL is an open-source relational database management system (RDBMS) that uses Structured Query Language (SQL) to manage data in tables with rows and columns.',
       image: '/mysql.jpg',
-      link: '/mysql'
+      link: '/mysqlpdf'
     },
     {
       id: 2,
       title: 'Oracle',
       description: 'Oracle Database is a powerful enterprise-grade RDBMS known for its performance, security, and scalability for mission-critical applications.',
       image: '/oracle.jpg',
-      link: '/oracle'
+      link: '/oraclepdf'
     },
     {
       id: 3,
       title: 'Mango Db',
       description: 'MongoDB is a NoSQL, document-based database that stores data in flexible, JSON-like documents instead of tables.',
       image: '/mangodb.jpg',
-      link: '/mangodb'
+      link: '/mongopdf'
     }
   ];
 

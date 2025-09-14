@@ -16,7 +16,7 @@ const BackendModule = () => {
       title: 'Python',
       description: 'Backend development with Python, Django, Flask',
       image: '/python.jpg',
-      link: '/python'
+      link: '/pythonpdf'
     },
     {
       id: 3,

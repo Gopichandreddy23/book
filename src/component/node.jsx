@@ -9,7 +9,7 @@ const Node = () => {
       description:
         'Node.js is a runtime environment that allows you to run JavaScript on the server side, enabling fast and scalable network applications.',
       image: '/nodejs.jpg',
-      link: 'https://www.oracle.com/java/technologies/javase-overview.html'
+      link: '/nodepdf'
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Node = () => {
       description:
         'Express.js is a minimal and flexible Node.js web application framework that simplifies building web APIs and servers.',
       image: '/express.jpg',
-      link: 'https://www.geeksforgeeks.org/advanced-java/'
+      link: '/expresspdf'
     }
   ];
 

@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="%PUBLIC_URL%/tech.png" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/tech.png" />
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/tech.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/tech.png" />
 
-  <!-- Viewport & Theme -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+    <!-- Viewport & Theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 
-  <!-- SEO Description -->
-  <meta name="description" content="TechBooks — Your one-stop platform for learning programming and technology. Explore interactive tutorials in Java, Python, HTML, CSS, JavaScript, SQL, and more." />
+    <!-- SEO -->
+    <title>TechBooks | Learn Programming & Technology</title>
+    <meta
+      name="description"
+      content="TechBooks is your one-stop platform to learn programming and technology. Explore tutorials in Java, Python, HTML, CSS, JavaScript, SQL, and more."
+    />
+    <meta
+      name="keywords"
+      content="TechBooks, learn programming, Java tutorials, Python tutorials, HTML CSS JavaScript, SQL database, web development, coding platform"
+    />
+    <meta name="author" content="TechBooks Team" />
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="TechBooks - Learn Programming & Technology" />
-  <meta property="og:description" content="Join TechBooks to master programming and web development skills with easy-to-follow tutorials and resources." />
-  <meta property="og:image" content="%PUBLIC_URL%/tech.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://techbooks.vercel.app" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://techbooks.vercel.app/" />
 
-  <!-- Manifest -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="TechBooks - Learn Programming & Technology" />
+    <meta
+      property="og:description"
+      content="Master programming and web development with TechBooks tutorials in Java, Python, HTML, CSS, JavaScript, and SQL."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/tech.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://techbooks.vercel.app/" />
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3367390409019103" crossorigin="anonymous"></script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TechBooks - Learn Programming & Technology" />
+    <meta
+      name="twitter:description"
+      content="Learn coding the easy way! Free tutorials in Java, Python, Web Development, SQL and more on TechBooks."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/tech.png" />
 
-  <!-- Page Title -->
-  <title>TECH BOOK</title>
-</head>
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-<body>
-  <!-- No JavaScript Fallback -->
-  <noscript>
-    JavaScript is required to run this application. Please enable it in your browser settings.
-  </noscript>
+    <!-- Structured Data (JSON-LD) for Google SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TechBooks",
+        "url": "https://techbooks.vercel.app/",
+        "description": "Learn programming and web development with tutorials in Java, Python, HTML, CSS, JavaScript, SQL, and more.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TechBooks",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://techbooks.vercel.app/tech.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://techbooks.vercel.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
 
-  <!-- React Root -->
-  <div id="root"></div>
-</body>
+    <!-- Google AdSense -->
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3367390409019103"
+     crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>

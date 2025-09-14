@@ -78,7 +78,7 @@ const Header = () => {
                 PRACTICE
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a 
                 href="/interview" 
                 className="nav-link"
@@ -86,16 +86,17 @@ const Header = () => {
               >
                 INTERVIEW
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a 
-                href="#contact" 
+                href="/about" 
                 className="nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                CONTACT
+                ABOUT US
               </a>
             </li>
+            
           </ul>
         </nav>
       </header>

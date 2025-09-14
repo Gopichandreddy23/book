@@ -9,7 +9,9 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>About Us</h3>
-          <p>Your company description goes here.</p>
+          <p>At TECHBOOKS, we are dedicated to empowering learners of all levels with comprehensive, high-quality resources to master programming languages. Whether you are a beginner exploring your first lines of code or a professional aiming to upgrade your skills, our platform offers a vast library covering all major programming languages — from Python, Java, and C++ to JavaScript, HTML/CSS, SQL, AI/ML, and beyond.
+
+With a focus on practical learning, real-world examples, and industry-relevant projects, TECHBOOKS ensures that learning to code is accessible, engaging, and career-focused. Our mission is simple: to help you code your future.</p>
         </div>
         
         <div className="footer-section">

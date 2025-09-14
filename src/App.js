@@ -15,10 +15,10 @@ import PraticeBook from './component/Pratice/PraticeBook';
 import PracticeBackendModule from './component/Pratice/PracticeBackend';
 import PracticeDatabase from './component/Pratice/PracticeDatabase';
 import PracticeFrontend from './component/Pratice/PracticeFrontend';
-import InterviewBook from './component/Interview/InterviewBook';
-import InterviewBackendModule from './component/Interview/InterviewBackend';
-import InterviewFrontend from './component/Interview/InterviewFrontend';
-import InterviewDatabase from './component/Interview/InterviewDatabase';
+// import InterviewBook from './component/Interview/InterviewBook';
+// import InterviewBackendModule from './component/Interview/InterviewBackend';
+// import InterviewFrontend from './component/Interview/InterviewFrontend';
+// import InterviewDatabase from './component/Interview/InterviewDatabase';
 import PracticeJava from './component/Pratice/PracticeJava';
 import PracticeCore from './component/Pratice/PracticeCoreJava';
 import AdvancedJavaPracticeApp from './component/Pratice/PracticeAdvance';
@@ -42,7 +42,21 @@ import Footer from './component/Footer';
 import ReactPracticeApp from './component/Pratice/ReactPractice';
 import CoreJavaPDFViewer from './component/corejava';
 import AdvanceJavaPDFViewer from './component/advance';
-import ReactPDFViewer from './component/Reactjs';
+
+import HtmlPDFViewer from './component/HtmlNotes';
+import CssPDFViewer from './component/CssPdf';
+import JsPDFViewer from './component/JsPdf';
+import ReactPDFViewer from './component/ReactPdf';
+import BootstrapPDFViewer from './component/BootstrapPdf';
+import TypescriptPDFViewer from './component/TypescriptPdf';
+import MongoPDFViewer from './component/MongodbPdf';
+import OraclePDFViewer from './component/OraclePdf';
+import MysqlPDFViewer from './component/MysqlPdf';
+import NodePDFViewer from './component/NodePdf';
+import ExpressPDFViewer from './component/ExpressPdf';
+import PythonPDFViewer from './component/PythonPdf';
+import AdvPDFViewer from './component/AdvancePdf';
+import JavaPDFViewer from './component/JavaPdf';
 
 export const App = () => {
   return (
@@ -86,20 +100,34 @@ export const App = () => {
                       <Route path="/practiceadvancepython" element={<PracticeAdvancedPython/>} />
            <Route path="/practiceadvance" element={<AdvancedJavaPracticeApp/>} />
             <Route path="/practicespring" element={<PracticeSpring/>} />
-                  <Route path="/interview" element={<InterviewBook />} />
+                  {/* <Route path="/interview" element={<InterviewBook />} />
          <Route path="/interviewbackend" element={<InterviewBackendModule/>} />
          <Route path="/interviewfrontend" element={<InterviewFrontend/>} />
-          <Route path="/interviewdatabase" element={<InterviewDatabase/>} />
+          <Route path="/interviewdatabase" element={<InterviewDatabase/>} /> */}
         <Route path="/backend" element={<BackendModule />} />
         <Route path="/frontend" element={<Frontend />} />
         <Route path="/database" element={<Database />} />
         <Route path="/java" element={<Java />} />
-        <Route path="/python" element={<Python />} />
+        {/* <Route path="/python" element={<Python />} /> */}
         <Route path="/node" element={<Node />} />
         <Route path="/spring" element={<SpringPDFViewer />} />
+        <Route path="/htmlpdf" element={<HtmlPDFViewer />} />
+        <Route path="/csspdf" element={<CssPDFViewer />} />
+        <Route path="/jspdf" element={<JsPDFViewer />} />
+        <Route path="/reactpdf" element={<ReactPDFViewer />} />
         <Route path="/java/pdf" element={<CoreJavaPDFViewer />} />
         <Route path="/advancejava/pdf" element={<AdvanceJavaPDFViewer />} />
          <Route path="/reactpdf" element={<ReactPDFViewer />} />
+         <Route path="/bootstrapPdf" element={<BootstrapPDFViewer />} />
+         <Route path="/typescriptPdf" element={<TypescriptPDFViewer />} />
+         <Route path="/mongopdf" element={<MongoPDFViewer />} />
+          <Route path="/oraclepdf" element={<OraclePDFViewer />} />
+           <Route path="/mysqlpdf" element={<MysqlPDFViewer />} />
+           <Route path="/nodepdf" element={<NodePDFViewer />} />
+           <Route path="/expresspdf" element={<ExpressPDFViewer />} />
+           <Route path="/pythonpdf" element={<PythonPDFViewer />} />
+           <Route path="/advpdf" element={<AdvPDFViewer />} />
+           <Route path="/javapdf" element={<JavaPDFViewer />} />
       </Routes>
        <Footer/>
     </BrowserRouter>
