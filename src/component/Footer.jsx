@@ -19,14 +19,14 @@ With a focus on practical learning, real-world examples, and industry-relevant p
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </div>
         
         <div className="footer-section">
           <h3>Contact Info</h3>
-          <p>Email: teckbook@gmail.com</p>
+          <p>Email: techbookslearnfree@gmail.com</p>
           {/* <p>Phone: (123) 456-7890</p> */}
         </div>
       </div>
